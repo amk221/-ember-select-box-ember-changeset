@@ -1,3 +1,14 @@
+<PowerSelect
+  @selected={{this.foo2Changeset}}
+  @options={{this.foos}}
+  @onChange={{this.handleSelectFoo}} as |foo|
+>
+  {{foo.name}}
+</PowerSelect>
+
+<br />
+<br />
+
 <NativeSelectBox
   @value={{this.foo2Changeset}}
   @onSelect={{this.handleSelectFoo}} as |sb|
@@ -9,7 +20,8 @@
   {{/each}}
 </NativeSelectBox>
 
-<br><br>
+<br />
+<br />
 
 <NativeSelectBox
   @value={{this.bar2Proxy}}
